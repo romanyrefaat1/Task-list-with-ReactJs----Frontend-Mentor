@@ -1,0 +1,39 @@
+.ceckbox--container {
+  cursor: pointer;
+  width: 20px;
+
+  position: relative;
+}
+
+.ceckbox--container.is-absolute {
+  position: absolute;
+  top: calc(50% + .1rem);
+  left: .7rem;
+  transform: translateY(-50%);
+}
+
+.ceckbox--container input {
+  display: none;
+}
+
+.ceckbox--container svg {
+    /* width: 100%;
+    height: 100%; */
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: var(--secondary-text-color);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.ceckbox--container input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 99999;
+  stroke-dashoffset: -262.2723388671875;
+}

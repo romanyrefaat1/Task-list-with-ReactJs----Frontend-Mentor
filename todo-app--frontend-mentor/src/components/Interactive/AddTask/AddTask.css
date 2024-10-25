@@ -1,0 +1,35 @@
+.text-input {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+
+  button {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .add-input-text--container{
+    position: relative;
+  }
+
+  input {
+    padding: 1.4rem 2.7rem;
+    /* background: var(--background-color-dark); */
+    background: var(--very-dark-desaturated-blue);
+    border-radius: var(--border-radius);
+    color: var(--secondary-text-color);
+    min-width: 100%;
+
+    border: none;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
